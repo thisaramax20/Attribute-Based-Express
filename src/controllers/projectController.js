@@ -1,6 +1,9 @@
-import { projects } from "../data/projectData";
-import { authorize } from "../middleware/authorize";
-import { canUpdateProject, canViewProject } from "../policies/projectPolicies";
+import { projects } from "../data/projectData.js";
+import { authorize } from "../middleware/authorize.js";
+import {
+  canUpdateProject,
+  canViewProject,
+} from "../policies/projectPolicies.js";
 
 //standardized response
 const handleResponse = (res, status, message, project = null) => {
